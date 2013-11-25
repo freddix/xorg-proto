@@ -30,12 +30,12 @@
 %define		xproto_version			7.0.23
 %define		xproxymanagementprotocol_version	1.0.3
 #
-%define		xcbproto_version		1.8
+%define		xcbproto_version		1.9
 #
 Summary:	Xorg headers
 Name:		xorg-proto
 Version:	7.7
-Release:	3
+Release:	4
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/bigreqsproto-%{bigreqsproto_version}.tar.bz2
@@ -99,7 +99,7 @@ Source28:	http://xorg.freedesktop.org/releases/individual/proto/xproto-%{xproto_
 Source29:	http://xorg.freedesktop.org/releases/individual/proto/xproxymanagementprotocol-%{xproxymanagementprotocol_version}.tar.bz2
 # Source29-md5:	9de22ca1522008c28fb03dfc41ba2d30
 Source30:	http://xcb.freedesktop.org/dist/xcb-proto-%{xcbproto_version}.tar.bz2
-# Source30-md5:	a5de3432cc6e43cc6a27f241dbb991b1
+# Source30-md5:	311817f844c45c0c3d76dd72e6560c10
 Source31:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{dri2proto_version}.tar.bz2
 # Source31-md5:	b2721d5d24c04d9980a0c6540cb5396a
 URL:		http://xorg.freedesktop.org/
