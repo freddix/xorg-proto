@@ -3,6 +3,7 @@
 %define		damageproto_version		1.2.1
 %define		dmxproto_version		2.3.1
 %define		dri2proto_version		2.8
+%define		dri3proto_version		1.0
 %define		evieext_version			1.1.1
 %define		fixesproto_version		5.0
 %define		fontcacheproto_version		0.1.3
@@ -10,6 +11,7 @@
 %define		glproto_version			1.4.17
 %define		inputproto_version		2.3
 %define		kbproto_version			1.0.6
+%define		presentproto_version		1.0
 %define		printproto_version		1.0.5
 %define		randrproto_version		1.4.0
 %define		recordproto_version		1.14.2
@@ -19,7 +21,7 @@
 %define		trapproto_version		3.4.3
 %define		videoproto_version		2.3.1
 %define		xcmiscproto_version		1.2.2
-%define		xextproto_version		7.2.1
+%define		xextproto_version		7.3.0
 %define		xf86bigfontproto_version	1.2.0
 %define		xf86dgaproto_version		2.1
 %define		xf86driproto_version		2.1.1
@@ -27,15 +29,15 @@
 %define		xf86rushproto_version		1.1.2
 %define		xf86vidmodeproto_version	2.3.1
 %define		xineramaproto_version		1.2.1
-%define		xproto_version			7.0.23
+%define		xproto_version			7.0.25
 %define		xproxymanagementprotocol_version	1.0.3
 #
-%define		xcbproto_version		1.9
+%define		xcbproto_version		1.10
 #
 Summary:	Xorg headers
 Name:		xorg-proto
 Version:	7.7
-Release:	5
+Release:	8
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/bigreqsproto-%{bigreqsproto_version}.tar.bz2
@@ -79,7 +81,7 @@ Source18:	http://xorg.freedesktop.org/releases/individual/proto/videoproto-%{vid
 Source19:	http://xorg.freedesktop.org/releases/individual/proto/xcmiscproto-%{xcmiscproto_version}.tar.bz2
 # Source19-md5:	5f4847c78e41b801982c8a5e06365b24
 Source20:	http://xorg.freedesktop.org/releases/individual/proto/xextproto-%{xextproto_version}.tar.bz2
-# Source20-md5:	eaac343af094e6b608cf15cfba0f77c5
+# Source20-md5:	70c90f313b4b0851758ef77b95019584
 Source21:	http://xorg.freedesktop.org/releases/individual/proto/xf86bigfontproto-%{xf86bigfontproto_version}.tar.bz2
 # Source21-md5:	120e226ede5a4687b25dd357cc9b8efe
 Source22:	http://xorg.freedesktop.org/releases/individual/proto/xf86dgaproto-%{xf86dgaproto_version}.tar.bz2
@@ -95,13 +97,17 @@ Source26:	http://xorg.freedesktop.org/releases/individual/proto/xf86vidmodeproto
 Source27:	http://xorg.freedesktop.org/releases/individual/proto/xineramaproto-%{xineramaproto_version}.tar.bz2
 # Source27-md5:	9959fe0bfb22a0e7260433b8d199590a
 Source28:	http://xorg.freedesktop.org/releases/individual/proto/xproto-%{xproto_version}.tar.bz2
-# Source28-md5:	d4d241a4849167e4e694fe73371c328c
+# Source28-md5:	28311ef4edbbbf89f617a7f8a2e5648f
 Source29:	http://xorg.freedesktop.org/releases/individual/proto/xproxymanagementprotocol-%{xproxymanagementprotocol_version}.tar.bz2
 # Source29-md5:	9de22ca1522008c28fb03dfc41ba2d30
 Source30:	http://xcb.freedesktop.org/dist/xcb-proto-%{xcbproto_version}.tar.bz2
-# Source30-md5:	311817f844c45c0c3d76dd72e6560c10
+# Source30-md5:	ade74b8e9c870dc7515adfa209e66063
 Source31:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{dri2proto_version}.tar.bz2
 # Source31-md5:	b2721d5d24c04d9980a0c6540cb5396a
+Source32:	http://xorg.freedesktop.org/releases/individual/proto/dri3proto-%{dri3proto_version}.tar.bz2
+# Source32-md5:	a3d2cbe60a9ca1bf3aea6c93c817fee3
+Source33:	http://xorg.freedesktop.org/releases/individual/proto/presentproto-%{presentproto_version}.tar.bz2
+# Source33-md5:	2d569c75884455c7148d133d341e8fd6
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -116,7 +122,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Xorg headers.
 
 %prep
-%setup -q -c -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31
+%setup -q -c -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33
 
 %build
 for dir in `ls -1` ; do
