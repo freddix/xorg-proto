@@ -9,7 +9,7 @@
 %define		fontcacheproto_version		0.1.3
 %define		fontsproto_version		2.1.3
 %define		glproto_version			1.4.17
-%define		inputproto_version		2.3
+%define		inputproto_version		2.3.1
 %define		kbproto_version			1.0.6
 %define		presentproto_version		1.0
 %define		printproto_version		1.0.5
@@ -32,12 +32,12 @@
 %define		xproto_version			7.0.26
 %define		xproxymanagementprotocol_version	1.0.3
 #
-%define		xcbproto_version		1.10
+%define		xcbproto_version		1.11
 #
 Summary:	Xorg headers
 Name:		xorg-proto
 Version:	7.7
-Release:	9
+Release:	11
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/bigreqsproto-%{bigreqsproto_version}.tar.bz2
@@ -59,7 +59,7 @@ Source7:	http://xorg.freedesktop.org/releases/individual/proto/fontsproto-%{font
 Source8:	http://xorg.freedesktop.org/releases/individual/proto/glproto-%{glproto_version}.tar.bz2
 # Source8-md5:	5565f1b0facf4a59c2778229c1f70d10
 Source9:	http://xorg.freedesktop.org/releases/individual/proto/inputproto-%{inputproto_version}.tar.bz2
-# Source9-md5:	94db391e60044e140c9854203d080654
+# Source9-md5:	6caebead4b779ba031727f66a7ffa358
 Source10:	http://xorg.freedesktop.org/releases/individual/proto/kbproto-%{kbproto_version}.tar.bz2
 # Source10-md5:	677ea8523eec6caca86121ad2dca0b71
 Source11:	http://xorg.freedesktop.org/releases/individual/proto/printproto-%{printproto_version}.tar.bz2
@@ -101,7 +101,7 @@ Source28:	http://xorg.freedesktop.org/releases/individual/proto/xproto-%{xproto_
 Source29:	http://xorg.freedesktop.org/releases/individual/proto/xproxymanagementprotocol-%{xproxymanagementprotocol_version}.tar.bz2
 # Source29-md5:	9de22ca1522008c28fb03dfc41ba2d30
 Source30:	http://xcb.freedesktop.org/dist/xcb-proto-%{xcbproto_version}.tar.bz2
-# Source30-md5:	ade74b8e9c870dc7515adfa209e66063
+# Source30-md5:	6bf2797445dc6d43e9e4707c082eff9c
 Source31:	http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{dri2proto_version}.tar.bz2
 # Source31-md5:	b2721d5d24c04d9980a0c6540cb5396a
 Source32:	http://xorg.freedesktop.org/releases/individual/proto/dri3proto-%{dri3proto_version}.tar.bz2
