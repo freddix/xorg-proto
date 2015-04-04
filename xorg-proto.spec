@@ -13,7 +13,7 @@
 %define		kbproto_version			1.0.6
 %define		presentproto_version		1.0
 %define		printproto_version		1.0.5
-%define		randrproto_version		1.4.0
+%define		randrproto_version		1.4.1
 %define		recordproto_version		1.14.2
 %define		renderproto_version		0.11.1
 %define		resourceproto_version		1.2.0
@@ -29,7 +29,7 @@
 %define		xf86rushproto_version		1.1.2
 %define		xf86vidmodeproto_version	2.3.1
 %define		xineramaproto_version		1.2.1
-%define		xproto_version			7.0.26
+%define		xproto_version			7.0.27
 %define		xproxymanagementprotocol_version	1.0.3
 #
 %define		xcbproto_version		1.11
@@ -37,7 +37,7 @@
 Summary:	Xorg headers
 Name:		xorg-proto
 Version:	7.7
-Release:	11
+Release:	12
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/bigreqsproto-%{bigreqsproto_version}.tar.bz2
@@ -65,7 +65,7 @@ Source10:	http://xorg.freedesktop.org/releases/individual/proto/kbproto-%{kbprot
 Source11:	http://xorg.freedesktop.org/releases/individual/proto/printproto-%{printproto_version}.tar.bz2
 # Source11-md5:	99d0e25feea2fead7d8325b7000b41c3
 Source12:	http://xorg.freedesktop.org/releases/individual/proto/randrproto-%{randrproto_version}.tar.bz2
-# Source12-md5:	ce4d0b05675968e4c83e003cc809660d
+# Source12-md5:	51ff4d45dbe8e1098740d384971805ee
 Source13:	http://xorg.freedesktop.org/releases/individual/proto/recordproto-%{recordproto_version}.tar.bz2
 # Source13-md5:	1b4e5dede5ea51906f1530ca1e21d216
 Source14:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{renderproto_version}.tar.bz2
@@ -97,7 +97,7 @@ Source26:	http://xorg.freedesktop.org/releases/individual/proto/xf86vidmodeproto
 Source27:	http://xorg.freedesktop.org/releases/individual/proto/xineramaproto-%{xineramaproto_version}.tar.bz2
 # Source27-md5:	9959fe0bfb22a0e7260433b8d199590a
 Source28:	http://xorg.freedesktop.org/releases/individual/proto/xproto-%{xproto_version}.tar.bz2
-# Source28-md5:	4dc2464bfeade23dab5de38da0f6b1b5
+# Source28-md5:	6c3345111a8044f730984988aacfa567
 Source29:	http://xorg.freedesktop.org/releases/individual/proto/xproxymanagementprotocol-%{xproxymanagementprotocol_version}.tar.bz2
 # Source29-md5:	9de22ca1522008c28fb03dfc41ba2d30
 Source30:	http://xcb.freedesktop.org/dist/xcb-proto-%{xcbproto_version}.tar.bz2
